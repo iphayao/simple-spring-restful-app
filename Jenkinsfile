@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                sh 'kubectl apply -f myapp-deployment.yml';
+                sh 'kubectl apply -f deployment.yml';
             }
         }
     }
